@@ -1,6 +1,6 @@
 # User Acuisition Analysis(Fintech)
 
-A user acquisition analysis for a Sample FinTech company with 10,000 app/software signups.
+A user acquisition analysis for a Sample FinTech company with 10,000 app/software signups in terms of life time value(LTV) and customer acquisition cost(CAC) over a period of 90 days.
 
 ## Overview
 
@@ -14,9 +14,9 @@ Acquisition channel metrics Founder should look out for.
 
 1. What is the user retention rate over 90 days per acquisition channels?
 
-2. What is the activation rate of each channel?
+2. What is the activation rate of each channel over 90 days?
 
-3. what is the LTV-to-CAC ratio for each channel?
+3. what is the LTV-to-CAC ratio for each channel over 90 days?
 
 ## Data Used
 
