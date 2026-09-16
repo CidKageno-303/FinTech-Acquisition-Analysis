@@ -67,12 +67,22 @@ axes[0].set_title('Confusion Matrix', color='white', fontsize=13)
 axes[0].tick_params(colors='white')
 axes[0].yaxis.label.set_color('white')
 axes[0].xaxis.label.set_color('white')
+axes[0].set_xlabel('Predicted Label', color='white')
+axes[0].set_ylabel('Actual Label', color='white')
+
+# Add caption below the confusion matrix
+axes[0].text(0.5, -0.15,
+             '★ Darker = Correct Predictions | ✕ Lighter = Errors',
+             transform=axes[0].transAxes,
+             ha='center', color='#00C49F', fontsize=10)
 
 # Feature Importance
 axes[1].barh(importance['feature'], importance['importance'], color='#00C49F')
 axes[1].set_facecolor('#1a1a1a')
 axes[1].set_title('Feature Importance', color='white', fontsize=13)
 axes[1].tick_params(colors='white')
+axes[1].set_xlabel('Importance', color='white')
+axes[1].set_ylabel('Feature', color='white')
 
 plt.suptitle('Churn Prediction Model — Random Forest', color='white', 
              fontsize=15, fontweight='bold')
